@@ -15,7 +15,7 @@ class Post < ActiveRecord::Base
     ]
   
   def clickbait?
-    CLICKBAIT.each do{|i| i.match self.title}
+    CLICKBAIT.each do {|i| if i.match self.title}
       errors.add(:title, "Not enough clickbait!")
     end
   end
