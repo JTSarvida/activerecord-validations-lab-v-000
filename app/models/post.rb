@@ -13,8 +13,8 @@ class Post < ActiveRecord::Base
     "Guess"
     ]
     
-  def cliclbait?
-    if self.title.include? {
-      
-    }
+  def clickbait?
+    if clickbait.each do |i|
+      i.include?(self.title)
+    end
 end
