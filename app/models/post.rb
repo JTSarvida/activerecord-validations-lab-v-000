@@ -14,7 +14,5 @@ class Post < ActiveRecord::Base
     ]
     
   def clickbait?
-    if clickbait.each do |i|
-      i.include?(self.title)
-    end
+    return false if clickbait.match
 end
