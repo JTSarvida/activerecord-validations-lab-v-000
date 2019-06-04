@@ -18,5 +18,7 @@ class Post < ActiveRecord::Base
     return false if clickbait.each do |i|
       i.match self.title 
     end
+    
+    return true 
   end
 end
