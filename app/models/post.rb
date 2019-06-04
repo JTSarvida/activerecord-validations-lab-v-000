@@ -12,4 +12,9 @@ class Post < ActiveRecord::Base
     "Top",
     "Guess"
     ]
+    
+  def clicbait?
+    if self.title.include? {
+      
+    }
 end
