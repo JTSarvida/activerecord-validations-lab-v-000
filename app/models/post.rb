@@ -13,6 +13,8 @@ class Post < ActiveRecord::Base
     "Top",
     "Guess"
     ]
-    
+  
+  def clickbait?
+  end
 
 end
