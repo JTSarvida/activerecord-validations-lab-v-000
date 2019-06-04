@@ -6,6 +6,7 @@ class Post < ActiveRecord::Base
   
   private
   
-  def click_bait_params
-    /
+  clickbait = [
+    "Won't Believe",
+    
 end
