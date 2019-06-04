@@ -9,5 +9,7 @@ class Post < ActiveRecord::Base
   clickbait = [
     "Won't Believe",
     "Secret",
-    "Top"
+    "Top",
+    "Guess"
+    ]
 end
