@@ -20,6 +20,7 @@ class Post < ActiveRecord::Base
         return true
       else
         errors.add(:title, "Not enough clickbait!")
+        return false
       end
     end
   end
